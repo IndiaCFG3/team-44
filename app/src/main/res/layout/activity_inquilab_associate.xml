@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".TeacherDashboard"
     android:orientation="vertical"
-    tools:context=".SignUpActivity">
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="80dp"
-        android:src = "@drawable/inqui"/>
+    android:padding="20sp">
+
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INQUI LAB"
-        android:textSize = "20sp"
+        android:text="Data feeding and analysis dashboard"
+        android:textAllCaps="true"
+        android:textSize = "25sp"
         android:fontFamily="@font/alfa_slab_one"/>
+
     <TextView
-        android:id = "@+id/slogan"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/userAI"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text = "Sign Up here"
-        android:textSize="12sp"
-        android:fontFamily="@font/alfa_slab_one"/>
+        android:layout_margin="0dp"
+        android:padding="10dp"
+        android:text="USERNAME"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,98 +36,85 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint = "Name"
-            android:id = "@+id/Name"
+            android:id = "@+id/nameAI"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint = "Username"
-            android:id = "@+id/un"
+            android:hint = "E-mail"
+            android:id = "@+id/emailAI"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-
         </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint = "School Name"
-            android:id = "@+id/SchoolName"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
 
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint = "School ID"
-            android:id = "@+id/sd"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/class_spinner"
-            android:outlineAmbientShadowColor="@color/cardview_dark_background"
-
-            />
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint = "Email"
-            android:id = "@+id/email"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint = "Password"
-            android:id = "@+id/pass"
-            app:passwordToggleEnabled="true"
+            android:id = "@+id/passwordAI"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword" />
-
+                android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Signup_spinner"
-            android:outlineAmbientShadowColor="@color/cardview_dark_background"
-            />
+            android:id="@+id/classAI"/>
 
-        <Button
-            android:id="@+id/signup"
-            android:layout_width="wrap_content"
+        <Spinner
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textColor="#fff"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:backgroundTint="#000"/>
+            android:id="@+id/schoolAI"/>
 
-
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint = "Google doc Link"
+            android:id = "@+id/hyperlinkAI"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btndash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Analysis"/>
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Update"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/clsobAI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="Class Observation form"/>
 </LinearLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtQ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ideas"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"/>
+
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:id="@+id/groupradio1"
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id1"
+                    android:text="Not Attempted"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id2"
+                    android:text="Attempted"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id3"
+                    android:text="Good"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id4"
+                    android:text="Showcase"
+                    android:textSize="20dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plans"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"/>
+
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:id="@+id/groupradio2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id21"
+                    android:text="Not Attempted"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id22"
+                    android:text="Partially Attempted"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id23"
+                    android:text="Completed"
+                    android:textSize="20dp"/>
+
+
+            </RadioGroup>
+            <TextView
+                android:id="@+id/txtQ3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make and Test"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"/>
+
+            <RadioGroup
+
+                android:layout_marginTop="10dp"
+                android:id="@+id/groupradio3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id31"
+                    android:text="Not Attempted"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id32"
+                    android:text="Partially Attempted"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id33"
+                    android:text="Completed"
+                    android:textSize="20dp"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/txtQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presentation"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"/>
+
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:id="@+id/groupradio4"
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id41"
+                    android:text="Not Attempted"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id42"
+                    android:text="Attempted"
+                    android:textSize="20dp"/>
+
+                <RadioButton
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id43"
+                    android:text="Few attempted"
+                    android:textSize="20dp"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/txtcomments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/mytextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" ></EditText>
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/submit"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <!-- add clear button for clear the selected item-->
+            <!--   <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Clear"
+                   android:id="@+id/clear"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="50dp"
+                   android:layout_marginLeft="20dp"
+                   />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

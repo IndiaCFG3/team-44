@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".UnitEvalForm"></activity>
+        <activity android:name=".ClassObserForm" />
+        <activity android:name=".InquilabAssociate" />
+        <activity android:name=".SchoolManagement" />
+        <activity android:name=".TeacherDashboard" />
+        <activity android:name=".StudentTeacherDashboard" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">

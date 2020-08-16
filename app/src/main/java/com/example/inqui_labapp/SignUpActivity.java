@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SignUpActivity extends AppCompatActivity {
-    TextInputLayout regName, regEmail, regPassword, regSchool;
+    TextInputLayout regName, regEmail, regPassword, regSchool, regSchoolID, regUsername;
     Button reg, sign;
     Spinner signupspinner, classSpinner;
     DatabaseReference reference;
@@ -31,18 +31,30 @@ public class SignUpActivity extends AppCompatActivity {
         regEmail = findViewById(R.id.email);
         regPassword = findViewById(R.id.pass);
         regSchool = findViewById(R.id.SchoolName);
-        reg = findViewById(R.id.lgn);
         sign = findViewById(R.id.signup);
         signupspinner = findViewById(R.id.Signup_spinner);
         classSpinner = findViewById(R.id.class_spinner);
+        regSchoolID = findViewById(R.id.sd);
+        regUsername = findViewById(R.id.un);
         List<String> categories1 = new ArrayList<String>();
         categories1.add("Student-Teacher");
         categories1.add("Teacher");
         categories1.add("School Management");
+        categories1.add("Inquilab Associate");
         List<String> categories2 = new ArrayList<String>();
-        categories2.add("7th");
-        categories2.add("8th");
-        categories2.add("9th");
+        categories2.add("All");
+        categories2.add("7A");
+        categories2.add("7B");
+        categories2.add("7C");
+        categories2.add("7D");
+        categories2.add("8A");
+        categories2.add("8B");
+        categories2.add("8C");
+        categories2.add("8D");
+        categories2.add("9A");
+        categories2.add("9B");
+        categories2.add("9C");
+        categories2.add("9D");
         ArrayAdapter<String> dataAdapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories1);
         dataAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         signupspinner.setAdapter(dataAdapter1);
@@ -63,17 +75,17 @@ public class SignUpActivity extends AppCompatActivity {
 
     public void registerUser() {
 
-
-
             String name = regName.getEditText().getText().toString();
             String email = regEmail.getEditText().getText().toString();
             String password = regPassword.getEditText().getText().toString();
             String schoolName = regSchool.getEditText().getText().toString();
             String studentClass = classSpinner.getSelectedItem().toString();
             String authority = signupspinner.getSelectedItem().toString();
-            StudentData userHelper = new StudentData(name, schoolName, studentClass, email, password, authority);
+            String sid = regSchoolID.getEditText().getText().toString();
+            String uname = regUsername.getEditText().getText().toString();
+            StudentData userHelper = new StudentData(name, email, sid, schoolName, uname,password, studentClass, authority);
             reference = FirebaseDatabase.getInstance().getReference(authority);
-            reference.child(name).setValue(userHelper);
+            reference.child(uname).setValue(userHelper);
             return;
         }
 }

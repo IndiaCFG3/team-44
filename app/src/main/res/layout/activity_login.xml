@@ -40,8 +40,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id = "@+id/Name"
-            android:hint = "Name"
+            android:id = "@+id/Username"
+            android:hint = "Username"
             android:transitionName="u"
             style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
@@ -55,6 +55,20 @@
             android:layout_height="wrap_content"
             android:id = "@+id/password"
             android:hint = "Password"
+            android:transitionName="ps"
+            app:passwordToggleEnabled="true"
+            style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/sid"
+            android:hint = "School ID"
             android:transitionName="ps"
             app:passwordToggleEnabled="true"
             style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
