@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "832759152874",
+    "firebase_url": "https://inqui-lab-app.firebaseio.com",
+    "project_id": "inqui-lab-app",
+    "storage_bucket": "inqui-lab-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832759152874:android:1ccbede82d093c048ad793",
+        "android_client_info": {
+          "package_name": "com.example.inqui_labapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832759152874-g3791ujfms8klh1rt5bdf6t69h2na8ou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.inqui_labapp",
+            "certificate_hash": "b18af0972e0c73813660f5243186c91638921878"
+          }
+        },
+        {
+          "client_id": "832759152874-v4shcb44vvbihv6kaf82tjp9uhgaimat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmOQc4gz6hy2lDzZ-ZpW54c2RoPcFmpW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832759152874-v4shcb44vvbihv6kaf82tjp9uhgaimat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

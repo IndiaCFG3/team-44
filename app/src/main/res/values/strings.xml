@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Inqui-Lab App</string>
+    <string name="logo_name">Inqui-Lab App</string>
+    <string-array name="Class">
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+    </string-array>
+
+</resources>
